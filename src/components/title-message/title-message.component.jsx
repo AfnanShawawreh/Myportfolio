@@ -14,7 +14,7 @@ const MyTitleMessage = styled.h1`
     font-size: 1.25em;
   }
   div {
-    color: ${props => props.theme.textColor};
+    color: ${(props) => props.theme.textColor};
 
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
@@ -39,16 +39,22 @@ const TitleMessage = () => (
           Hi, I am
           <br />
           <span>
-            <strong>Afnan AL_Shawawreh</strong>
+            <strong>Afnan Shawawreh</strong>
           </span>
         </div>
         <div className="sub">
           <Typewriter
             options={{
-              strings: ["Full Stack Developer", "creative", "curious", "motivated","Learner"],
+              strings: [
+                "Full Stack Developer",
+                "creative",
+                "curious",
+                "motivated",
+                "Learner",
+              ],
               autoStart: true,
               loop: true,
-              delay: 50
+              delay: 50,
             }}
           />
         </div>
