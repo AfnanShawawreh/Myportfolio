@@ -3,6 +3,10 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
 // projects
 import L_book from "../../assets/img/projects/book.webp";
+import L_Memories from "../../assets/img/projects/memories.png";
+import L_Guess from "../../assets/img/projects/guessNumberGame.png";
+import L_Todo from "../../assets/img/projects/todo.png";
+
 import L_nany from "../../assets/img/projects/nany.webp";
 
 import L_Moody from "../../assets/img/projects/Moody.webp";
@@ -28,6 +32,112 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
+          <ImageEvent
+            className="text-center"
+            text="Memories App"
+            src={L_Memories}
+            alt="Memories"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> Web App allows Web App to
+                        save Memory with the date (my first App Using Redux
+                        library)
+                        <br />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="React"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React
+                            </span>
+
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_NODE_JS}
+                                  alt="Node.js"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                Node.js
+                              </span>
+                            </li>
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_EXPRESS}
+                                  alt="Express"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                Express
+                              </span>
+                            </li>
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_MATERIALUI}
+                                  alt="material-Ui"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                MATERIALUI
+                              </span>
+                            </li>
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_HEROKU}
+                                  alt="HEROKU"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                HEROKU
+                              </span>
+                            </li>
+                          </li>
+                        </ul>
+                        <hr />
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://github.com/AfnanShawawreh/MemoriesMernApp"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://memories-mern-app2020.netlify.app/"
+                  target="_blank"
+                >
+                  GO TO THE WEBSITE
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
           {/* Project:Nany app */}
           <ImageEvent
             className="text-center"
@@ -246,7 +356,63 @@ const TimeLine = () => {
               </div>
             </div>
           </ImageEvent>
+          <ImageEvent
+            className="text-center"
+            text="GUESS NUMBER GAME"
+            src={L_Guess}
+            alt="guess number game"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
 
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> Mobile Game to guess
+                        entered number
+                        <br />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_reactnative}
+                                  alt="React Native"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                React Native
+                              </span>
+                            </li>
+                          </li>
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://github.com/AfnanShawawreh/ReactNative-Game"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton href="https://youtu.be/eNi1mTjrpxg" target="_blank">
+                  WATCH VIDEO
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
           {/* Project:Moody App */}
           <ImageEvent
             className="text-center"
@@ -342,6 +508,110 @@ const TimeLine = () => {
                   target="_blank"
                 >
                   SOURCE CODE
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+          <ImageEvent
+            className="text-center"
+            text="TO-DO App"
+            src={L_Todo}
+            alt="TO_DO-APP"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> Simple To-Do App To Save
+                        and delete tasks from the list
+                        <br />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="React"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React
+                            </span>
+
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_NODE_JS}
+                                  alt="Node.js"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                Node.js
+                              </span>
+                            </li>
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_EXPRESS}
+                                  alt="Express"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                Express
+                              </span>
+                            </li>
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_MATERIALUI}
+                                  alt="material-Ui"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                MATERIALUI
+                              </span>
+                            </li>
+                            <li>
+                              <span className="p-2">
+                                <Image
+                                  src={L_HEROKU}
+                                  alt="HEROKU"
+                                  rounded
+                                  className="image-style1 m-1"
+                                ></Image>{" "}
+                                HEROKU
+                              </span>
+                            </li>
+                          </li>
+                        </ul>
+                        <hr />
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://github.com/AfnanShawawreh/ToDoFullStackApp"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://todo-mern-app.netlify.app/"
+                  target="_blank"
+                >
+                  GO TO THE WEBSITE
                 </UrlButton>
               </div>
             </div>
