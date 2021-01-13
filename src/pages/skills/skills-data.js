@@ -14,8 +14,9 @@ import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
 import L_mongodb from "../../assets/img/skills/mongodb.svg";
-import L_reactnative  from "../../assets/img/skills/reactnative.svg";
-
+import L_reactnative from "../../assets/img/skills/reactnative.svg";
+import L_Redux from "../../assets/img/skills/Redux.png";
+import L_hooks from "../../assets/img/skills/Hooks.png";
 
 export const skills = {
   frontend: [
@@ -26,13 +27,8 @@ export const skills = {
       skillName: "HTML5",
     },
     {
-      link: "https://en.wikipedia.org/wiki/reactnative ",
-      imgAltText: "reactnative ",
-      imgSrc: L_reactnative ,
-      skillName: "reactnative",
-    },
-    {
-      link: "https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1",
+      link:
+        "https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1",
       imgAltText: "CSS 3",
       imgSrc: L_CSS3,
       skillName: "CSS3",
@@ -43,7 +39,6 @@ export const skills = {
       imgSrc: L_JAVASCRIPT,
       skillName: "JavaScript",
     },
-    
     {
       link: "https://getbootstrap.com/",
       imgAltText: "Bootstrap",
@@ -56,8 +51,6 @@ export const skills = {
       imgSrc: L_REACT,
       skillName: "React JS",
     },
-  
-    
     {
       link: "https://reacttraining.com/react-router/",
       imgAltText: "React Router",
@@ -65,16 +58,36 @@ export const skills = {
       skillName: "React Router",
     },
     {
+      link: "https://en.wikipedia.org/wiki/reactnative ",
+      imgAltText: "reactnative ",
+      imgSrc: L_reactnative,
+      skillName: "reactnative",
+    },
+
+    {
+      link: "https://material-ui.com/",
+      imgAltText: "Material-UI",
+      imgSrc: L_MATERIALUI,
+      skillName: "Material-UI",
+    },
+
+    {
       link: "https://react-bootstrap.github.io/",
       imgAltText: "React Bootstrap",
       imgSrc: L_REACT_BOOTSTRAP,
       skillName: "React Bootstrap",
     },
     {
-      link: "https://material-ui.com/",
-      imgAltText: "Material-UI",
-      imgSrc: L_MATERIALUI,
-      skillName: "Material-UI",
+      link: "https://reactjs.org/docs/hooks-overview.html",
+      imgAltText: "HOOKS",
+      imgSrc:  L_hooks,
+      skillName: "HOOKS",
+    },
+    {
+      link: "https://redux.js.org/",
+      imgAltText: "Redux",
+      imgSrc:  L_Redux ,
+      skillName: "Redux",
     },
   ],
 
@@ -91,8 +104,6 @@ export const skills = {
       imgSrc: L_EXPRESS,
       skillName: "Express",
     },
-    
-   
   ],
   hostingPlatforms: [
     {
@@ -108,7 +119,6 @@ export const skills = {
       imgSrc: L_GITHUB_PAGES,
       skillName: "GitHub Pages",
     },
-  
   ],
   programmingLanguages: [
     {
@@ -123,8 +133,6 @@ export const skills = {
       imgSrc: L_TYPESCRIPT,
       skillName: "TypeScript",
     },
-   
-    
   ],
   databases: [
     {
@@ -136,10 +144,9 @@ export const skills = {
     {
       link: "https://docs.mongodb.com/",
       imgAltText: " mongodb",
-      imgSrc:  L_mongodb,
+      imgSrc: L_mongodb,
       skillName: " mongodb",
     },
-    
   ],
   versionControl: [
     {

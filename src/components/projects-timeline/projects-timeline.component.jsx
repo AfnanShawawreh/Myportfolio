@@ -132,7 +132,7 @@ const TimeLine = () => {
                   href="https://memories-mern-app2020.netlify.app/"
                   target="_blank"
                 >
-                  GO TO THE WEBSITE
+                  VISIT APP
                 </UrlButton>
               </div>
             </div>
@@ -611,7 +611,7 @@ const TimeLine = () => {
                   href="https://todo-mern-app.netlify.app/"
                   target="_blank"
                 >
-                  GO TO THE WEBSITE
+                VISIT APP
                 </UrlButton>
               </div>
             </div>
